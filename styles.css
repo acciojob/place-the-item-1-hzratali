@@ -1,2 +1,17 @@
-
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1 1 calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+/* Adjust margin to create space between items */
+.item:first-child {
+    margin-right: 10px; /* Space between first item and left edge */
+}
+.item:last-child {
+    margin-left: 10px; /* Space between last item and right edge */
+}
